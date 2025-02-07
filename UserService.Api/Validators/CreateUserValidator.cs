@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using UserService.Api.ViewModels;
-using UserService.Domain;
 
 namespace UserService.Api.Validators
 {
@@ -12,14 +11,18 @@ namespace UserService.Api.Validators
 
             ApplyNameRules(() => RuleFor(x => x.LastName));
 
-            RuleFor(x => x.Email).NotEmpty().WithMessage("Email cannot be empty.")
-                .EmailAddress().WithMessage("Invalid email format.");
+            RuleFor(x => x.Email)
+                .NotEmpty().WithMessage("Email is required.")
+                .Matches(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
+                .WithMessage("Invalid email format.");
 
-            RuleFor(x => x.PhoneNumber).NotEmpty().WithMessage("Phone number cannot be empty.")
-                .Length(11).WithMessage("The length of phone number should be 11 characters.");
+            RuleFor(x => x.PhoneNumber)
+                .NotEmpty().WithMessage("Phone number is required.")
+                .Matches(@"^\d{11}$") // Only allows exactly 11 digits
+                .WithMessage("Phone number must be exactly 11 digits.");
         }
 
-        private void ApplyNameRules(Func<IRuleBuilderInitial<CreateUserViewModel, string>> ruleFor)
+        private static void ApplyNameRules(Func<IRuleBuilderInitial<CreateUserViewModel, string>> ruleFor)
         {
             ruleFor()
                 .NotEmpty().WithMessage("Name cannot be empty.")
@@ -30,3 +33,4 @@ namespace UserService.Api.Validators
 
     }
 }
+
