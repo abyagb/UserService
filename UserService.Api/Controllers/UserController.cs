@@ -1,11 +1,9 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using UserService.Api.Validators;
 using UserService.Api.ViewModels;
 using UserService.Application.DTOs;
 using UserService.Application.Interfaces;
-using UserService.Domain;
 
 namespace UserService.Api.Controllers
 {
