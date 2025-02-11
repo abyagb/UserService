@@ -25,6 +25,7 @@ namespace UserService.Application
             }
            
             var user=_mapper.Map<User>(userDto);
+            user.UserId=Guid.NewGuid();
             await _userRepository.CreateAsync(user);
         }
 

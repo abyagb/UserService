@@ -9,10 +9,11 @@ namespace UserService.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController(IEndUserService userService,IMapper mapper) : ControllerBase
+    public class UserController(IEndUserService userService,IMapper mapper,ILogger<UserController> logger) : ControllerBase
     {
         private readonly IEndUserService _userService = userService;
         private readonly IMapper _mapper = mapper;
+        private readonly ILogger<UserController> _logger = logger;
        
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
@@ -27,6 +28,7 @@ namespace UserService.Api.Controllers
             var validator = new CreateUserValidator();
             var result=await validator.ValidateAsync(userView);
             if (result.IsValid == false) return BadRequest(result.Errors);
+            var correlationId = Request.Headers["X-Correlation-ID"].ToString();
             var userDto=_mapper.Map<UserDto>(userView);
             try
             {
@@ -34,8 +36,10 @@ namespace UserService.Api.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Error during CreateAsync - Correlation ID: {CorrelationId}", correlationId);
                 return BadRequest();
             }
+            _logger.LogInformation("User created successfully - Correlation ID: {CorrelationId}", correlationId);
             return NoContent();
         }
 
@@ -43,10 +47,14 @@ namespace UserService.Api.Controllers
         public async Task<IActionResult> Get([FromRoute] Guid id)
         {
             var userDto = await _userService.GetUserByIdAsync(id);
+            var correlationId = Request.Headers["X-Correlation-ID"].ToString();
             if (userDto == null)
             {
+                
+                _logger.LogWarning("User not found - User ID: {UserId}, Correlation ID: {CorrelationId}", id, correlationId);
                 return NotFound();
             }
+            _logger.LogInformation("Fetched user {UserId} - Correlation ID: {CorrelationId}", id, correlationId);
             return Ok(userDto);
         }
 
@@ -54,12 +62,15 @@ namespace UserService.Api.Controllers
         public async Task<IActionResult> Put([FromRoute] Guid id,UserDto userDto)
         {
             var user = await _userService.GetUserByIdAsync(id);
+            var correlationId = Request.Headers["X-Correlation-ID"].ToString();
+
             if (user == null)
             {
+                _logger.LogWarning("User not found - User ID: {UserId}, Correlation ID: {CorrelationId}", id, correlationId);
                 return NotFound();
             }
             await _userService.UpdateAsync(id, userDto);
-
+            _logger.LogInformation("User {UserId} updated successfully - Correlation ID: {CorrelationId}", id, correlationId);
             return NoContent();
         }
 
@@ -67,11 +78,13 @@ namespace UserService.Api.Controllers
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
             var user = await _userService.GetUserByIdAsync(id);
-            if(user == null)
+            var correlationId = Request.Headers["X-Correlation-ID"].ToString();
+            if (user == null)
             {
+                _logger.LogWarning("User not found - User ID: {UserId}, Correlation ID: {CorrelationId}", id, correlationId);
                 return NotFound();
             }
-
+            _logger.LogInformation("User {UserId} deleted successfully - Correlation ID: {CorrelationId}", id, correlationId);
             await _userService.DeleteAsync(id);
             return NoContent();
         }

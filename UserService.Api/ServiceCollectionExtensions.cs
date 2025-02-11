@@ -3,6 +3,7 @@ using UserService.Repository;
 using UserService.Application.Interfaces;
 using UserService.Application;
 using UserService.Application.Mappings;
+using UserService.Middlewares;
 
 namespace UserService.Api
 {
@@ -27,7 +28,7 @@ namespace UserService.Api
         }
         public static void ConfigureApplication(this WebApplication app)
         {
-
+            app.UseMiddleware<CorrelationIdMiddleware>();
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
