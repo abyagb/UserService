@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using UserService.Api.Validators;
 using UserService.Api.ViewModels;
@@ -9,11 +10,12 @@ namespace UserService.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController(IEndUserService userService,IMapper mapper,ILogger<UserController> logger) : ControllerBase
+    public class UserController(IEndUserService userService, IMapper mapper, ILogger<UserController> logger, IValidator<CreateUserViewModel> userValidator) : ControllerBase
     {
         private readonly IEndUserService _userService = userService;
         private readonly IMapper _mapper = mapper;
         private readonly ILogger<UserController> _logger = logger;
+        private readonly IValidator<CreateUserViewModel> _userValidator = userValidator;
        
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
@@ -25,9 +27,8 @@ namespace UserService.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] CreateUserViewModel userView)
         {
-            var validator = new CreateUserValidator();
-            var result=await validator.ValidateAsync(userView);
-            if (result.IsValid == false) return BadRequest(result.Errors);
+            var validatorResult = _userValidator.Validate(userView);
+            if (validatorResult.IsValid == false) return BadRequest(validatorResult.Errors);
             var correlationId = Request.Headers["X-Correlation-ID"].ToString();
             var userDto=_mapper.Map<UserDto>(userView);
             try

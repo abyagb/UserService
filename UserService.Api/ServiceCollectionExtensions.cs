@@ -4,6 +4,9 @@ using UserService.Application.Interfaces;
 using UserService.Application;
 using UserService.Application.Mappings;
 using UserService.Middlewares;
+using FluentValidation;
+using UserService.Api.Validators;
+using UserService.Api.ViewModels;
 
 namespace UserService.Api
 {
@@ -17,7 +20,12 @@ namespace UserService.Api
         public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped<IEndUserService,EndUserService>();
-            services.AddAutoMapper(typeof( UserDtoToUser));
+            services.AddAutoMapper(typeof( UserDtoToUser));  
+        }
+
+        public static void AddValidators(this IServiceCollection services)
+        {
+            services.AddScoped<IValidator<CreateUserViewModel>, CreateUserValidator>();
         }
 
         public static void AddControllerUtilities(this IServiceCollection services)
