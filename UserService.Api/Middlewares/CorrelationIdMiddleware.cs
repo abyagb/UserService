@@ -2,6 +2,11 @@
 {
     public class CorrelationIdMiddleware
     {
+        //do you understand what this class is supposed to do?
+        //because you have this and you are also creating a new correlation id in the controller
+        //you should only have one place where you create the correlation id
+        //and that should be in the middleware
+        //try to understand what the class is doing instead of just copy and paste
         private readonly RequestDelegate _next;
         public CorrelationIdMiddleware(RequestDelegate next)
         {

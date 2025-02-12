@@ -20,9 +20,10 @@ namespace UserService.Api
         public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped<IEndUserService,EndUserService>();
-            services.AddAutoMapper(typeof( UserDtoToUser));  
+            services.AddAutoMapper(typeof( UserDtoToUser));  //remove the space between typeof and (
         }
 
+        //we added the validator here but didnt add it in program.cs
         public static void AddValidators(this IServiceCollection services)
         {
             services.AddScoped<IValidator<CreateUserViewModel>, CreateUserValidator>();
@@ -42,12 +43,12 @@ namespace UserService.Api
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+//remove empty line
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();
             app.Run();
-
+//remove empty line
         }
     }
 }
