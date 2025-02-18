@@ -15,7 +15,7 @@ namespace UserService.Repository
             throw new NotImplementedException();
         }
 
-        public Task DeleteAsync(Guid userId)
+        public Task DeleteAsync(User user)
         {
             throw new NotImplementedException();
         }

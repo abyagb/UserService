@@ -6,82 +6,66 @@ using UserService.Repository.Interfaces;
 
 namespace UserService.Application
 {
-    public class EndUserService(IUserRepository userRepository,IMapper mapper) : IEndUserService
+    public class EndUserService : IEndUserService
     {
-        private readonly IUserRepository _userRepository=userRepository;
-        private readonly IMapper _mapper=mapper;
+        private readonly IUserRepository _userRepository;
+        private readonly IMapper _mapper;
 
-        private async Task<bool> CheckIfUserExists(string email)
+        public EndUserService(IUserRepository userRepository, IMapper mapper)
         {
-           return await _userRepository.CheckIfUserExists(email);
+            _userRepository = userRepository;
+            _mapper = mapper;
+        }
+
+        private async Task<bool> CheckIfUserExistsByEmailAsync(string email)
+        {
+            return await _userRepository.CheckIfUserExists(email);
         }
 
         public async Task CreateAsync(UserDto userDto)
         {
-            var userExists=await CheckIfUserExists(userDto.Email);
-            if(userExists)
+            var userExists = await CheckIfUserExistsByEmailAsync(userDto.Email);
+            if (userExists)
             {
-                throw new Exception();
+                throw new Exception("User already exists");
             }
-           
-            var user=_mapper.Map<User>(userDto);
-            user.UserId=Guid.NewGuid();
+
+            var user = _mapper.Map<User>(userDto);
+            user.UserId = Guid.NewGuid();
             await _userRepository.CreateAsync(user);
         }
 
         public async Task DeleteAsync(Guid userId)
         {
-            await _userRepository.DeleteAsync(userId);
+            var user=await _userRepository.GetUserByIdAsync(userId);
+            if(user == null)
+            {
+                throw new KeyNotFoundException($"User with Id:{userId} not found");
+            }
+            await _userRepository.DeleteAsync(user);
         }
 
         public async Task<IEnumerable<UserDto>> GetAllAsync()
         {
-           var users = await _userRepository.GetAllAsync();
-           var usersDto=new List<UserDto>();
-            foreach (var user in users)
-            {
-                usersDto.Add(new UserDto()
-                { 
-
-                    Address = user.Address,
-                    PhoneNumber = user.PhoneNumber,
-                    Email = user.Email,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
-                });
-            }
-            return usersDto;
+            var users = await _userRepository.GetAllAsync();
+            return _mapper.Map<IEnumerable<UserDto>>(users);
         }
 
         public async Task<UserDto?> GetUserByIdAsync(Guid userId)
         {
             var user = await _userRepository.GetUserByIdAsync(userId);
-            if (user != null)
+            if(user==null)
             {
-                var userDto=new UserDto()
-                {
-                    Address = user.Address,
-                    PhoneNumber = user.PhoneNumber,
-                    Email = user.Email,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
-
-                };
-                return userDto;
+                throw new KeyNotFoundException($"User with Id:{userId} not found");
             }
-            return null;
+            var userDto=_mapper.Map<UserDto>(user);
+            return userDto;
         }
-        public async Task UpdateAsync(Guid id,UserDto userDto)
+
+        public async Task UpdateAsync(Guid id, UserDto userDto)
         {
-            var user = new User()
-            {
-                UserId = id,
-                FirstName = userDto.FirstName,
-                LastName = userDto.LastName,
-                Email = userDto.Email,
-                Address = userDto.Address,
-                PhoneNumber = userDto.PhoneNumber,
-            };
+            var user = _mapper.Map<User>(userDto);
+            user.UserId = id;
             await _userRepository.UpdateAsync(user);
         }
     }

@@ -20,7 +20,7 @@ namespace UserService.Api
         public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped<IEndUserService,EndUserService>();
-            services.AddAutoMapper(typeof( UserDtoToUser));  
+            services.AddAutoMapper(typeof(UserProfile));  
         }
 
         public static void AddValidators(this IServiceCollection services)
@@ -36,18 +36,17 @@ namespace UserService.Api
         }
         public static void ConfigureApplication(this WebApplication app)
         {
+            app.UseMiddleware<ExceptionMiddleware>();
             app.UseMiddleware<CorrelationIdMiddleware>();
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();
             app.Run();
-
         }
     }
 }
