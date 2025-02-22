@@ -6,6 +6,7 @@ using UserService.Application.Interfaces;
 using UserService.Domain;
 using UserService.Repository.Interfaces;
 
+
 namespace UserService.Application
 {
     public class EndUserService(IUserRepository userRepository, IMapper mapper) : IEndUserService
@@ -17,7 +18,6 @@ namespace UserService.Application
             if (userExists)
             {
                 throw new InvalidUserException($"User with email {userDto.Email} or phone number {userDto.PhoneNumber} already exists.");
-
             }
             var user = mapper.Map<User>(userDto);
             user.UserId = Guid.NewGuid();
@@ -27,7 +27,7 @@ namespace UserService.Application
         public async Task DeleteAsync(Guid userId)
         {
             var user = await userRepository.GetUserByIdAsync(userId);
-            if(user == null)
+            if (user == null)
             {
                 throw new KeyNotFoundException($"User with Id:{userId} not found");
             }
@@ -43,11 +43,11 @@ namespace UserService.Application
         public async Task<UserDto?> GetUserByIdAsync(Guid userId)
         {
             var user = await userRepository.GetUserByIdAsync(userId);
-            if(user == null)
+            if (user == null)
             {
                 throw new KeyNotFoundException($"User with Id:{userId} not found");
             }
-            var userDto=mapper.Map<UserDto>(user);
+            var userDto = mapper.Map<UserDto>(user);
             return userDto;
         }
 
@@ -57,7 +57,5 @@ namespace UserService.Application
             user.UserId = id;
             await userRepository.UpdateAsync(user);
         }
-        
-        
     }
 }

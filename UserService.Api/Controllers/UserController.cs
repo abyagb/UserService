@@ -28,6 +28,7 @@ namespace UserService.Api.Controllers
                .Select(e => new { Field = e.PropertyName, Error = e.ErrorMessage })
                 .ToList();
 
+
                 return BadRequest(new
                 {
                     StatusCode = StatusCodes.Status400BadRequest,
@@ -35,7 +36,6 @@ namespace UserService.Api.Controllers
                     ValidationErrors = validationErrors
                 });
             }
-
             var userDto = mapper.Map<UserDto>(userViewModel);
             await userService.CreateAsync(userDto);
             return Ok();

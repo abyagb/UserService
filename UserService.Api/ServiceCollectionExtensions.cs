@@ -8,20 +8,23 @@ using FluentValidation;
 using UserService.Api.Validators;
 using UserService.Api.ViewModels;
 
+
 namespace UserService.Api
 {
     public static class ServiceCollectionExtensions
     {
         public static void AddRepositories(this IServiceCollection services)
         {
-           services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
+
 
         public static void AddServices(this IServiceCollection services)
         {
-            services.AddScoped<IEndUserService,EndUserService>();
-            services.AddAutoMapper(typeof(UserProfile));  
+            services.AddScoped<IEndUserService, EndUserService>();
+            services.AddAutoMapper(typeof(UserProfile));
         }
+
 
         public static void AddValidators(this IServiceCollection services)
         {
@@ -50,3 +53,4 @@ namespace UserService.Api
         }
     }
 }
+
