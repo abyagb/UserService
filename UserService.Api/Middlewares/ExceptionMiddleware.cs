@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using UserService.Application.Exceptions;
 
 namespace UserService.Middlewares
 {
@@ -23,7 +24,7 @@ namespace UserService.Middlewares
             var statusCode = exception switch
             {
                 KeyNotFoundException => StatusCodes.Status404NotFound,
-                ArgumentException => StatusCodes.Status400BadRequest,
+                InvalidUserException => StatusCodes.Status400BadRequest,
                 _ => StatusCodes.Status500InternalServerError
             };
 

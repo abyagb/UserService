@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using UserService.Application.DTOs;
+using UserService.Application.Exceptions;
+using UserService.Application.IEndUserValidator;
 using UserService.Application.Interfaces;
 using UserService.Domain;
 using UserService.Repository.Interfaces;
@@ -10,12 +12,13 @@ namespace UserService.Application
     {
         public async Task CreateAsync(UserDto userDto)
         {
-            var userExists = await CheckIfUserExistsByEmailAsync(userDto.Email);
+            var endUserValidator = new EndUserValidator(userRepository);
+            var userExists = await endUserValidator.CheckIfUserExists(userDto.Email, userDto.PhoneNumber);
             if (userExists)
             {
-                throw new Exception("User already exists");
-            }
+                throw new InvalidUserException($"User with email {userDto.Email} or phone number {userDto.PhoneNumber} already exists.");
 
+            }
             var user = mapper.Map<User>(userDto);
             user.UserId = Guid.NewGuid();
             await userRepository.CreateAsync(user);
@@ -23,7 +26,7 @@ namespace UserService.Application
 
         public async Task DeleteAsync(Guid userId)
         {
-            var user=await userRepository.GetUserByIdAsync(userId);
+            var user = await userRepository.GetUserByIdAsync(userId);
             if(user == null)
             {
                 throw new KeyNotFoundException($"User with Id:{userId} not found");
@@ -40,7 +43,7 @@ namespace UserService.Application
         public async Task<UserDto?> GetUserByIdAsync(Guid userId)
         {
             var user = await userRepository.GetUserByIdAsync(userId);
-            if(user==null)
+            if(user == null)
             {
                 throw new KeyNotFoundException($"User with Id:{userId} not found");
             }
@@ -55,9 +58,6 @@ namespace UserService.Application
             await userRepository.UpdateAsync(user);
         }
         
-        private async Task<bool> CheckIfUserExistsByEmailAsync(string email)
-        {
-            return await userRepository.CheckIfUserExists(email);
-        }
+        
     }
 }

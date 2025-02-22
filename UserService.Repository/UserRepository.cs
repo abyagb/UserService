@@ -5,7 +5,7 @@ namespace UserService.Repository
 {
     public class UserRepository :IUserRepository
     {
-        public Task<bool> CheckIfUserExists(string email)
+        public Task<bool> CheckIfUserExists(string email,string phoneNumber)
         {
             throw new NotImplementedException();
         }

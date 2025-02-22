@@ -8,7 +8,6 @@ namespace UserService.Application.Interfaces
         Task<UserDto?> GetUserByIdAsync(Guid userId);
         Task<IEnumerable<UserDto>> GetAllAsync();
         Task UpdateAsync(Guid id,UserDto userDto);
-        Task DeleteAsync(Guid userId);
-        
+        Task DeleteAsync(Guid userId);   
     }
 }
