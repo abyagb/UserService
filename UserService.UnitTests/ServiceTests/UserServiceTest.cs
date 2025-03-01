@@ -46,23 +46,32 @@ namespace UserService.UnitTests.ServiceTests
             result.Count().ShouldBe(testUsers.Count);
         }
 
-        //[Fact]
-        //public async Task Return_Empty_When_No_Users()
-        //{
-        //    var users = await _endUserService.GetAllAsync();
-        //    users.Count().ShouldBe(3);
-        //}
+        [Fact]
+        public async Task Fetches_UserById_When_User_Exists()
+        {
+            // Arrange
+            var testUser = _autoFixture.Create<User>();
+            _mockUserRepository.Setup(x => x.GetUserByIdAsync(testUser.UserId)).ReturnsAsync(testUser);
+            _mockMapper.Setup(x => x.Map<UserDto>(It.IsAny<User>())).Returns(
+            new UserDto
+            {
+                FirstName = testUser.FirstName,
+                LastName = testUser.LastName,
+                Email = testUser.Email,
+                PhoneNumber = testUser.PhoneNumber,
+                Address = testUser.Address
+            });
 
+            // Act
+            var result = await _endUserService.GetUserByIdAsync(testUser.UserId);
 
-        //[Fact]
-        //public async Task Fetches_UserById_When_User_Exists()
-        //{
-        //    var existingUserId = _users[0].UserId;
-        //    var user = await _endUserService.GetUserByIdAsync(existingUserId);
-        //    user.ShouldNotBeNull();
-        //    user.FirstName.ShouldBe(_users[0].FirstName);
-        //    user.LastName.ShouldBe(_users[0].LastName);
-        //}
+            // Assert
+            result.ShouldNotBeNull();
+            result.FirstName.ShouldBe(testUser.FirstName);
+            result.LastName.ShouldBe(testUser.LastName);
+            result.Email.ShouldBe(testUser.Email);
+            result.Address.ShouldBe(testUser.Address);
+        }
 
         //[Fact]
         //public async Task Throws_An_Exception_When_User_Doesnt_Exist()
@@ -75,22 +84,27 @@ namespace UserService.UnitTests.ServiceTests
         //}
 
 
-        //[Fact]
-        //public async Task Should_CreateUser_WhenUserDoesntAlreadyExists()
-        //{
-        //    var user = _fixture.Create<User>();
-        //    user.Email = "newUser@gmail.com";
-        //    user.PhoneNumber = "01234567890";
-        //    var userDto = _mapper.Map<UserDto>(user);
-        //    await _endUserService.CreateAsync(userDto);
-        //    var addedUser = _users.Find(u => u.Email == userDto.Email && u.PhoneNumber == userDto.PhoneNumber);
-        //    addedUser.ShouldNotBeNull();
-        //    addedUser.Email.ShouldBe(userDto.Email);
-        //    addedUser.PhoneNumber.ShouldBe(userDto.PhoneNumber);
-        //}
+        [Fact]
+        public async Task Creates_User_Successfully()
+        {
+            // Arrange
+            var testUserDto = _autoFixture.Create<UserDto>();
+           
+            // Act
+           
+            // Assert
+
+
+
+            await _endUserService.CreateAsync(userDto);
+            var addedUser = _users.Find(u => u.Email == userDto.Email && u.PhoneNumber == userDto.PhoneNumber);
+            addedUser.ShouldNotBeNull();
+            addedUser.Email.ShouldBe(userDto.Email);
+            addedUser.PhoneNumber.ShouldBe(userDto.PhoneNumber);
+        }
 
         //[Fact]
-        //public async Task Creates_User_Successfully()
+        //public async Task Deletes_User_Successfully()
         //{
         //    var id = _users[0].UserId;
         //    await _endUserService.DeleteAsync(id);
