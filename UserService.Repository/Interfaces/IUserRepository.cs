@@ -9,6 +9,7 @@ namespace UserService.Repository.Interfaces
         Task<IEnumerable<User>> GetAllAsync();
         Task UpdateAsync(User user);
         Task DeleteAsync(User user);
-        Task<bool> CheckIfUserExists(string email,string phoneNumber);
+        Task<bool> CheckIfEmailExists(string email);
+        Task<bool> CheckIfPhoneNumberExists(string phoneNumber);
     }
 }

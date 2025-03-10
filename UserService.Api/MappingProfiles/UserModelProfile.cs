@@ -4,9 +4,9 @@ using UserService.Application.DTOs;
 
 namespace UserService.Api.Mappings
 {
-    public class UserModelMappingProfiles : Profile
+    public class UserModelProfile : Profile
     {
-        public UserModelMappingProfiles()
+        public UserModelProfile()
         {
             CreateMap<CreateUserViewModel, UserDto>();
         }

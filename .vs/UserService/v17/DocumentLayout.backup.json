@@ -3,40 +3,112 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\validators\\createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\validators\\createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.unittests\\edituservalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|solutionrelative:userservice.unittests\\edituservalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\validators\\edituservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\validators\\edituservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.unittests\\createuservalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|solutionrelative:userservice.unittests\\createuservalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.unittests\\servicetests\\enduserservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|solutionrelative:userservice.unittests\\servicetests\\enduserservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.unittests\\servicetests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|solutionrelative:userservice.unittests\\servicetests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.unittests\\servicetests\\enduserservicehelpertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|solutionrelative:userservice.unittests\\servicetests\\enduserservicehelpertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.unittests\\servicetests\\enduservalidatortest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|solutionrelative:userservice.unittests\\servicetests\\enduservalidatortest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\enduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\enduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\ienduservalidator\\enduservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\ienduservalidator\\enduservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\helpers\\enduserservicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\helpers\\enduserservicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44A541CD-442A-47CE-996C-B7DD38C83237}|UserService.Shared\\UserService.Shared.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.shared\\userservice.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{44A541CD-442A-47CE-996C-B7DD38C83237}|UserService.Shared\\UserService.Shared.csproj|solutionrelative:userservice.shared\\userservice.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\interfaces\\ienduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\interfaces\\ienduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\dtos\\userpatchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\dtos\\userpatchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\viewmodels\\edituserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\viewmodels\\edituserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\viewmodels\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\viewmodels\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.unittests\\createuservalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B6FB41E-D63E-47C3-816B-AC479A5D8B3A}|UserService.UnitTests\\UserService.UnitTests.csproj|solutionrelative:userservice.unittests\\createuservalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A68926-1D53-408B-96CC-71950EC3DE60}|UserService.Repository\\UserService.Repository.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.repository\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23A68926-1D53-408B-96CC-71950EC3DE60}|UserService.Repository\\UserService.Repository.csproj|solutionrelative:userservice.repository\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\validators\\enduservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\validators\\enduservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\mappingprofiles\\usermodelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\mappingprofiles\\usermodelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\exceptions\\invalidentityexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\exceptions\\invalidentityexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\exceptions\\entitynotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\exceptions\\entitynotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C2C73C7-A889-48B6-A362-A25C8FCD6852}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.domain\\userservice.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0C2C73C7-A889-48B6-A362-A25C8FCD6852}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\userservice.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23A68926-1D53-408B-96CC-71950EC3DE60}|UserService.Repository\\UserService.Repository.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23A68926-1D53-408B-96CC-71950EC3DE60}|UserService.Repository\\UserService.Repository.csproj|solutionrelative:userservice.repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23A68926-1D53-408B-96CC-71950EC3DE60}|UserService.Repository\\UserService.Repository.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.repository\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23A68926-1D53-408B-96CC-71950EC3DE60}|UserService.Repository\\UserService.Repository.csproj|solutionrelative:userservice.repository\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\validators\\ienduservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\validators\\ienduservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\validators\\createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\validators\\createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44A541CD-442A-47CE-996C-B7DD38C83237}|UserService.Shared\\UserService.Shared.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.shared\\userservice.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{44A541CD-442A-47CE-996C-B7DD38C83237}|UserService.Shared\\UserService.Shared.csproj|solutionrelative:userservice.shared\\userservice.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C2C73C7-A889-48B6-A362-A25C8FCD6852}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,94 +123,30 @@
       "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\mappingprofiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\interfaces\\ienduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\interfaces\\ienduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\exceptions\\invaliduserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\exceptions\\invaliduserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39F1048B-4C3B-41C8-9450-CD6C946EB73E}|UserService.Application\\UserService.Application.csproj|solutionrelative:userservice.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\viewmodels\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\viewmodels\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\middlewares\\correlationidmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\middlewares\\correlationidmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\mappingprofiles\\usermodelmappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\mappingprofiles\\usermodelmappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CCE9650-61FC-45F2-9240-03AD3645D066}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23A68926-1D53-408B-96CC-71950EC3DE60}|UserService.Repository\\UserService.Repository.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.repository\\userservice.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{23A68926-1D53-408B-96CC-71950EC3DE60}|UserService.Repository\\UserService.Repository.csproj|solutionrelative:userservice.repository\\userservice.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C2C73C7-A889-48B6-A362-A25C8FCD6852}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\admin\\downloads\\userservice\\userservice\\userservice.domain\\userservice.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0C2C73C7-A889-48B6-A362-A25C8FCD6852}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\userservice.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 210,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "InvalidUserException.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Exceptions\\InvalidUserException.cs",
-              "RelativeDocumentMoniker": "UserService.Application\\Exceptions\\InvalidUserException.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Exceptions\\InvalidUserException.cs",
-              "RelativeToolTip": "UserService.Application\\Exceptions\\InvalidUserException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T17:58:09.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EndUserValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\IEndUserValidator\\EndUserValidator.cs",
-              "RelativeDocumentMoniker": "UserService.Application\\IEndUserValidator\\EndUserValidator.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\IEndUserValidator\\EndUserValidator.cs",
-              "RelativeToolTip": "UserService.Application\\IEndUserValidator\\EndUserValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T13:51:29.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 28,
               "Title": "Address.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Domain\\Address.cs",
               "RelativeDocumentMoniker": "UserService.Domain\\Address.cs",
@@ -146,11 +154,155 @@
               "RelativeToolTip": "UserService.Domain\\Address.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T09:53:52.703Z"
+              "WhenOpened": "2025-02-19T09:53:52.703Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditUserValidatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\EditUserValidatorTests.cs",
+              "RelativeDocumentMoniker": "UserService.UnitTests\\EditUserValidatorTests.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\EditUserValidatorTests.cs",
+              "RelativeToolTip": "UserService.UnitTests\\EditUserValidatorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T21:57:23.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditUserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\Validators\\EditUserValidator.cs",
+              "RelativeDocumentMoniker": "UserService.Api\\Validators\\EditUserValidator.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\Validators\\EditUserValidator.cs*",
+              "RelativeToolTip": "UserService.Api\\Validators\\EditUserValidator.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T21:54:20.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EndUserServiceHelperTest.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\ServiceTests\\EndUserServiceHelperTest.cs",
+              "RelativeDocumentMoniker": "UserService.UnitTests\\ServiceTests\\EndUserServiceHelperTest.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\ServiceTests\\EndUserServiceHelperTest.cs*",
+              "RelativeToolTip": "UserService.UnitTests\\ServiceTests\\EndUserServiceHelperTest.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T21:52:06.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EndUserServiceHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Helpers\\EndUserServiceHelper.cs",
+              "RelativeDocumentMoniker": "UserService.Application\\Helpers\\EndUserServiceHelper.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Helpers\\EndUserServiceHelper.cs",
+              "RelativeToolTip": "UserService.Application\\Helpers\\EndUserServiceHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T21:10:19.161Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "UserPatchDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\DTOs\\UserPatchDto.cs",
+              "RelativeDocumentMoniker": "UserService.Application\\DTOs\\UserPatchDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\DTOs\\UserPatchDto.cs",
+              "RelativeToolTip": "UserService.Application\\DTOs\\UserPatchDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T20:32:13.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EditUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\ViewModels\\EditUserViewModel.cs",
+              "RelativeDocumentMoniker": "UserService.Api\\ViewModels\\EditUserViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\ViewModels\\EditUserViewModel.cs",
+              "RelativeToolTip": "UserService.Api\\ViewModels\\EditUserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T20:23:45.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EndUserValidatorTest.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\ServiceTests\\EndUserValidatorTest.cs",
+              "RelativeDocumentMoniker": "UserService.UnitTests\\ServiceTests\\EndUserValidatorTest.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\ServiceTests\\EndUserValidatorTest.cs",
+              "RelativeToolTip": "UserService.UnitTests\\ServiceTests\\EndUserValidatorTest.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAACcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:58:23.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EntityNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Exceptions\\EntityNotFoundException.cs",
+              "RelativeDocumentMoniker": "UserService.Application\\Exceptions\\EntityNotFoundException.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Exceptions\\EntityNotFoundException.cs",
+              "RelativeToolTip": "UserService.Application\\Exceptions\\EntityNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T19:54:28.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IEndUserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Validators\\IEndUserValidator.cs",
+              "RelativeDocumentMoniker": "UserService.Application\\Validators\\IEndUserValidator.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Validators\\IEndUserValidator.cs",
+              "RelativeToolTip": "UserService.Application\\Validators\\IEndUserValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T19:11:13.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InvalidEntityException.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Exceptions\\InvalidEntityException.cs",
+              "RelativeDocumentMoniker": "UserService.Application\\Exceptions\\InvalidEntityException.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Exceptions\\InvalidEntityException.cs",
+              "RelativeToolTip": "UserService.Application\\Exceptions\\InvalidEntityException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:58:09.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EndUserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Validators\\EndUserValidator.cs",
+              "RelativeDocumentMoniker": "UserService.Application\\Validators\\EndUserValidator.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Validators\\EndUserValidator.cs",
+              "RelativeToolTip": "UserService.Application\\Validators\\EndUserValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T13:51:29.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Domain\\User.cs",
               "RelativeDocumentMoniker": "UserService.Domain\\User.cs",
@@ -162,56 +314,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\ServiceTests\\UserServiceTest.cs",
-              "RelativeDocumentMoniker": "UserService.UnitTests\\ServiceTests\\UserServiceTest.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\ServiceTests\\UserServiceTest.cs",
-              "RelativeToolTip": "UserService.UnitTests\\ServiceTests\\UserServiceTest.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "EndUserServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\ServiceTests\\EndUserServiceTest.cs",
+              "RelativeDocumentMoniker": "UserService.UnitTests\\ServiceTests\\EndUserServiceTest.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\ServiceTests\\EndUserServiceTest.cs*",
+              "RelativeToolTip": "UserService.UnitTests\\ServiceTests\\EndUserServiceTest.cs*",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAKoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T09:46:33.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UserModelMappingProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\MappingProfiles\\UserModelMappingProfiles.cs",
-              "RelativeDocumentMoniker": "UserService.Api\\MappingProfiles\\UserModelMappingProfiles.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\MappingProfiles\\UserModelMappingProfiles.cs",
-              "RelativeToolTip": "UserService.Api\\MappingProfiles\\UserModelMappingProfiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "UserModelProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\MappingProfiles\\UserModelProfile.cs",
+              "RelativeDocumentMoniker": "UserService.Api\\MappingProfiles\\UserModelProfile.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\MappingProfiles\\UserModelProfile.cs",
+              "RelativeToolTip": "UserService.Api\\MappingProfiles\\UserModelProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T20:32:01.597Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 12,
               "Title": "CreateUserViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\ViewModels\\CreateUserViewModel.cs",
               "RelativeDocumentMoniker": "UserService.Api\\ViewModels\\CreateUserViewModel.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\ViewModels\\CreateUserViewModel.cs",
               "RelativeToolTip": "UserService.Api\\ViewModels\\CreateUserViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T11:22:10.236Z"
+              "WhenOpened": "2025-02-17T11:22:10.236Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Repository\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "UserService.Repository\\Interfaces\\IUserRepository.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Repository\\Interfaces\\IUserRepository.cs",
               "RelativeToolTip": "UserService.Repository\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T10:53:57.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 23,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "UserService.Api\\Middlewares\\ExceptionMiddleware.cs",
@@ -219,12 +372,11 @@
               "RelativeToolTip": "UserService.Api\\Middlewares\\ExceptionMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAcwBAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T08:26:16.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T08:26:16.07Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 29,
               "Title": "UserProfile.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\MappingProfiles\\UserProfile.cs",
               "RelativeDocumentMoniker": "UserService.Application\\MappingProfiles\\UserProfile.cs",
@@ -236,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 25,
               "Title": "CreateUserValidator.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\Validators\\CreateUserValidator.cs",
               "RelativeDocumentMoniker": "UserService.Api\\Validators\\CreateUserValidator.cs",
@@ -244,12 +396,11 @@
               "RelativeToolTip": "UserService.Api\\Validators\\CreateUserValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T20:44:43.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T20:44:43.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "CorrelationIdMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\Middlewares\\CorrelationIdMiddleware.cs",
               "RelativeDocumentMoniker": "UserService.Api\\Middlewares\\CorrelationIdMiddleware.cs",
@@ -261,19 +412,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "UserService.Repository\\UserRepository.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Repository\\UserRepository.cs",
               "RelativeToolTip": "UserService.Repository\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T20:54:04.829Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\DTOs\\UserDto.cs",
               "RelativeDocumentMoniker": "UserService.Application\\DTOs\\UserDto.cs",
@@ -281,59 +432,62 @@
               "RelativeToolTip": "UserService.Application\\DTOs\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T20:51:51.429Z"
+              "WhenOpened": "2025-02-10T20:51:51.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "UserService.Api\\ServiceCollectionExtensions.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\ServiceCollectionExtensions.cs",
               "RelativeToolTip": "UserService.Api\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAIBQwDMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T20:51:39.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\Program.cs",
               "RelativeDocumentMoniker": "UserService.Api\\Program.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\Program.cs",
               "RelativeToolTip": "UserService.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T20:51:38.207Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EndUserService.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\EndUserService.cs",
               "RelativeDocumentMoniker": "UserService.Application\\EndUserService.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\EndUserService.cs",
               "RelativeToolTip": "UserService.Application\\EndUserService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAiwB0AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAE4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T20:51:25.407Z"
+              "WhenOpened": "2025-02-10T20:51:25.407Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "IEndUserService.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Interfaces\\IEndUserService.cs",
               "RelativeDocumentMoniker": "UserService.Application\\Interfaces\\IEndUserService.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Application\\Interfaces\\IEndUserService.cs",
               "RelativeToolTip": "UserService.Application\\Interfaces\\IEndUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T20:51:22.352Z"
+              "WhenOpened": "2025-02-10T20:51:22.352Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 26,
               "Title": "UserService.Shared.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Shared\\UserService.Shared.csproj",
               "RelativeDocumentMoniker": "UserService.Shared\\UserService.Shared.csproj",
@@ -345,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\appsettings.json",
               "RelativeDocumentMoniker": "UserService.Api\\appsettings.json",
@@ -357,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "UserService.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Domain\\UserService.Domain.csproj",
               "RelativeDocumentMoniker": "UserService.Domain\\UserService.Domain.csproj",
@@ -369,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "UserService.Repository.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Repository\\UserService.Repository.csproj",
               "RelativeDocumentMoniker": "UserService.Repository\\UserService.Repository.csproj",
@@ -381,19 +535,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 7,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "UserService.Api\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.Api\\Controllers\\UserController.cs",
               "RelativeToolTip": "UserService.Api\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T20:22:16.779Z"
+              "WhenOpened": "2025-02-10T20:22:16.779Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "CreateUserValidatorTests.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\UserService\\UserService\\UserService.UnitTests\\CreateUserValidatorTests.cs",
               "RelativeDocumentMoniker": "UserService.UnitTests\\CreateUserValidatorTests.cs",

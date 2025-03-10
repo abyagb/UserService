@@ -7,6 +7,8 @@ using UserService.Middlewares;
 using FluentValidation;
 using UserService.Api.Validators;
 using UserService.Api.ViewModels;
+using UserService.Application.Validators;
+using UserService.Api.Mappings;
 
 
 namespace UserService.Api
@@ -23,12 +25,15 @@ namespace UserService.Api
         {
             services.AddScoped<IEndUserService, EndUserService>();
             services.AddAutoMapper(typeof(UserProfile));
+            services.AddAutoMapper(typeof(UserModelProfile));
         }
 
 
         public static void AddValidators(this IServiceCollection services)
         {
             services.AddScoped<IValidator<CreateUserViewModel>, CreateUserValidator>();
+
+            services.AddScoped<IEndUserValidator,EndUserValidator>();
         }
 
         public static void AddControllerUtilities(this IServiceCollection services)

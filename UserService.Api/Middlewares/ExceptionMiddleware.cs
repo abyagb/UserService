@@ -24,7 +24,7 @@ namespace UserService.Middlewares
             var statusCode = exception switch
             {
                 KeyNotFoundException => StatusCodes.Status404NotFound,
-                InvalidUserException => StatusCodes.Status400BadRequest,
+                InvalidEntityException => StatusCodes.Status400BadRequest,
                 _ => StatusCodes.Status500InternalServerError
             };
 

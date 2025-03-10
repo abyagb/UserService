@@ -3,11 +3,16 @@ using UserService.Repository.Interfaces;
 
 namespace UserService.Repository
 {
-    public class UserRepository :IUserRepository
+    public class UserRepository : IUserRepository
     {
-        public Task<bool> CheckIfUserExists(string email,string phoneNumber)
+        public async Task<bool> CheckIfEmailExists(string email)
         {
-            throw new NotImplementedException();
+            return false;
+        }
+
+        public async Task<bool> CheckIfPhoneNumberExists(string phoneNumber)
+        {
+            return false;
         }
 
         public Task CreateAsync(User user)

@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using UserService.Api.ViewModels;
 using UserService.Application.DTOs;
 using UserService.Application.Interfaces;
+using UserService.Domain;
+using UserService.ViewModels;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace UserService.Api.Controllers
 {
@@ -48,10 +51,11 @@ namespace UserService.Api.Controllers
             return Ok(userDto);
         }
 
-        [HttpPut("{id:guid}")]
-        public async Task<IActionResult> Put([FromRoute] Guid id, UserDto userDto)
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> Update(Guid id, EditUserViewModel viewModel)
         {
-            await userService.UpdateAsync(id, userDto);
+            var userPatchDto = MapToPatchDto(id, viewModel);
+            await userService.UpdateAsync(id, userPatchDto);
             return NoContent();
         }
 
@@ -60,6 +64,34 @@ namespace UserService.Api.Controllers
         {
             await userService.DeleteAsync(id);
             return NoContent();
+        }
+
+        private static UserPatchDto MapToPatchDto(Guid userId, EditUserViewModel viewModel)
+        {
+            try
+            {
+                var patchDto = new UserPatchDto
+                {
+                    UserId = userId,
+                    FieldsToUpdate = new Dictionary<string, object>()
+                };
+
+                var viewModelType = typeof(EditUserViewModel);
+
+                foreach (var property in viewModelType.GetProperties())
+                {
+                    var viewModelValue = property.GetValue(viewModel);
+                    if (viewModelValue != null)
+                    {
+                        patchDto.FieldsToUpdate.Add(property.Name, viewModelValue);
+                    }
+                }
+                return patchDto;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error mapping model to Patch DTO", ex);
+            }
         }
     }
 }

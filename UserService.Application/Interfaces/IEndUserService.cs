@@ -7,7 +7,7 @@ namespace UserService.Application.Interfaces
         Task CreateAsync(UserDto userDto);
         Task<UserDto?> GetUserByIdAsync(Guid userId);
         Task<IEnumerable<UserDto>> GetAllAsync();
-        Task UpdateAsync(Guid id,UserDto userDto);
+        Task UpdateAsync(Guid id, UserPatchDto userPatchDto);
         Task DeleteAsync(Guid userId);   
     }
 }
