@@ -11,12 +11,23 @@ using UserService.Application.Validators;
 using UserService.Api.Mappings;
 using UserService.Validators;
 using UserService.ViewModels;
+using System.Data;
+using System.Data.SqlClient;
 
 
 namespace UserService.Api
 {
     public static class ServiceCollectionExtensions
     {
+        public static void AddDatabaseConfiguration(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddScoped<IDbConnection>((sp) =>
+            {
+                var connectionString = configuration.GetConnectionString("DefaultConnection");
+                return new SqlConnection(connectionString);
+            });
+        }
+
         public static void AddRepositories(this IServiceCollection services)
         {
             services.AddScoped<IUserRepository, UserRepository>();
