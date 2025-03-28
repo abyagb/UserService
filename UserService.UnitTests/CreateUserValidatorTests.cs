@@ -7,7 +7,7 @@ namespace UserService.UnitTests
     public class CreateUserValidatorTests
     {
         private readonly CreateUserValidator _validator = new();
-        
+
         [Theory]
         [InlineData("")]
         [InlineData(null)]
@@ -18,16 +18,16 @@ namespace UserService.UnitTests
             var testModel = CreateTestModel();
             testModel.FirstName = name;
             testModel.LastName = name;
-            
+
             // Act
             var validationResult = _validator.Validate(testModel);
-            
+
             // Assert
             validationResult.IsValid.ShouldBeFalse();
             validationResult.Errors.ShouldContain(e => e.PropertyName == "FirstName");
             validationResult.Errors.ShouldContain(e => e.PropertyName == "LastName");
         }
-        
+
         [Theory]
         [InlineData("Yay", true)] // 3 characters
         [InlineData("Yayy", true)] // 4 characters
@@ -39,13 +39,15 @@ namespace UserService.UnitTests
         [InlineData("LmvLHvCWBiyamViDiySSOkZQIjxMubFLZwVsIGNzVvVuSKoxBtyyBvnFLHNw", false)] // 60 characters
         public void Should_Correct_Validation_Result_For_Name(string name, bool isValid)
         {
-            // Arrange 
+            // Arrange
             var testModel = CreateTestModel();
             testModel.FirstName = name;
             testModel.LastName = name;
 
+
             // Act
             var validationResult = _validator.Validate(testModel);
+
 
             // Assert
             validationResult.IsValid.ShouldBe(isValid);
@@ -71,10 +73,10 @@ namespace UserService.UnitTests
             var testModel = CreateTestModel();
             testModel.FirstName = name;
             testModel.LastName = name;
-            
+
             // Act
             var validationResult = _validator.Validate(testModel);
-            
+
             // Assert
             validationResult.IsValid.ShouldBeFalse();
             validationResult.Errors.ShouldContain(e => e.PropertyName == "FirstName");
@@ -92,10 +94,10 @@ namespace UserService.UnitTests
             // Arrange
             var testModel = CreateTestModel();
             testModel.Email = email;
-            
+
             // Act
             var validationResult = _validator.Validate(testModel);
-            
+
             // Assert
             validationResult.IsValid.ShouldBe(isValid);
             if (isValid is false)
@@ -113,10 +115,10 @@ namespace UserService.UnitTests
             // Arrange
             var testModel = CreateTestModel();
             testModel.PhoneNumber = phoneNumber;
-            
+
             // Act
             var validationResult = _validator.Validate(testModel);
-            
+
             // Assert
             validationResult.IsValid.ShouldBeTrue();
         }
@@ -125,7 +127,7 @@ namespace UserService.UnitTests
         [InlineData("")]
         [InlineData("1234567890")]   // 10 digits
         [InlineData("123456789012")] // 12 digits
-        [InlineData("abcdefghijk")]  
+        [InlineData("abcdefghijk")]
         [InlineData("123-456-78901")]
         [InlineData("071 2345 6789")]
         public void Should_Have_Validation_Error_For_Invalid_PhoneNumber(string phoneNumber)
@@ -133,10 +135,10 @@ namespace UserService.UnitTests
             // Arrange
             var testModel = CreateTestModel();
             testModel.PhoneNumber = phoneNumber;
-            
+
             // Act
             var validationResult = _validator.Validate(testModel);
-            
+
             // Assert
             validationResult.IsValid.ShouldBeFalse();
             validationResult.Errors.ShouldContain(e => e.PropertyName == "PhoneNumber");
@@ -154,3 +156,5 @@ namespace UserService.UnitTests
         }
     }
 }
+
+

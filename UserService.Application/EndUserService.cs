@@ -1,87 +1,82 @@
 ﻿using AutoMapper;
+using Microsoft.Extensions.Logging;
 using UserService.Application.DTOs;
+using UserService.Application.Exceptions;
+using UserService.Application.Helpers;
 using UserService.Application.Interfaces;
+using UserService.Application.Validators;
 using UserService.Domain;
 using UserService.Repository.Interfaces;
 
 namespace UserService.Application
 {
-    public class EndUserService(IUserRepository userRepository,IMapper mapper) : IEndUserService
+    public class EndUserService(IUserRepository userRepository, IMapper mapper, IEndUserValidator endUserValidator, ILogger<EndUserService> logger) : IEndUserService
     {
-        private readonly IUserRepository _userRepository=userRepository;
-        private readonly IMapper _mapper=mapper;
-
-        private async Task<bool> CheckIfUserExists(string email)
-        {
-           return await _userRepository.CheckIfUserExists(email);
-        }
+        private readonly string EntityName = "User";
 
         public async Task CreateAsync(UserDto userDto)
         {
-            var userExists=await CheckIfUserExists(userDto.Email);
-            if(userExists)
+            var isValidNewUser = await endUserValidator.Validate(userDto);
+
+            if (!isValidNewUser.Item1)
             {
-                throw new Exception();
+                logger.LogError("An error occurred when creating a new user.Error message: {validationError}", isValidNewUser.Item2);
+                throw new InvalidEntityException(EntityName, null, isValidNewUser.Item2);
             }
-           
-            var user=_mapper.Map<User>(userDto);
-            await _userRepository.CreateAsync(user);
-        }
 
-        public async Task DeleteAsync(Guid userId)
-        {
-            await _userRepository.DeleteAsync(userId);
-        }
-
-        public async Task<IEnumerable<UserDto>> GetAllAsync()
-        {
-           var users = await _userRepository.GetAllAsync();
-           var usersDto=new List<UserDto>();
-            foreach (var user in users)
-            {
-                usersDto.Add(new UserDto()
-                { 
-
-                    Address = user.Address,
-                    PhoneNumber = user.PhoneNumber,
-                    Email = user.Email,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
-                });
-            }
-            return usersDto;
+            var newUser = mapper.Map<User>(userDto);
+            newUser.UserId = Guid.NewGuid();
+            await userRepository.CreateAsync(newUser);
         }
 
         public async Task<UserDto?> GetUserByIdAsync(Guid userId)
         {
-            var user = await _userRepository.GetUserByIdAsync(userId);
-            if (user != null)
-            {
-                var userDto=new UserDto()
-                {
-                    Address = user.Address,
-                    PhoneNumber = user.PhoneNumber,
-                    Email = user.Email,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
+            var user = await userRepository.GetUserByIdAsync(userId);
 
-                };
-                return userDto;
-            }
-            return null;
-        }
-        public async Task UpdateAsync(Guid id,UserDto userDto)
-        {
-            var user = new User()
+            if (user == null)
             {
-                UserId = id,
-                FirstName = userDto.FirstName,
-                LastName = userDto.LastName,
-                Email = userDto.Email,
-                Address = userDto.Address,
-                PhoneNumber = userDto.PhoneNumber,
-            };
-            await _userRepository.UpdateAsync(user);
+                logger.LogError("User not found. UserId : {userId}", userId);
+                throw new EntityNotFoundException("User", userId);
+            }
+
+            var userDto = mapper.Map<UserDto>(user);
+            return userDto;
+        }
+
+        public async Task DeleteAsync(Guid userId)
+        {
+            var user = await userRepository.GetUserByIdAsync(userId);
+
+            if (user == null)
+            {
+                logger.LogError("User not found. UserId : {userId}", userId);
+                throw new EntityNotFoundException("User", userId);
+            }
+
+            await userRepository.DeleteAsync(user);
+        }
+
+        public async Task<IEnumerable<UserDto>> GetAllAsync()
+        {
+            var users = await userRepository.GetAllAsync();
+            return mapper.Map<IEnumerable<UserDto>>(users);
+        }
+
+        public async Task UpdateAsync(Guid userId, UserPatchDto userPatchDto)
+        {
+            var userToUpdate = await userRepository.GetUserByIdAsync(userId);
+
+            if (userToUpdate == null)
+            {
+                logger.LogError("User not found. UserId : {userId}", userId);
+                throw new EntityNotFoundException("User", userId);
+            }
+
+            EndUserServiceHelper.ValidatePatchFields(userPatchDto.FieldsToUpdate);
+            EndUserServiceHelper.ApplyPatch(userToUpdate, userPatchDto.FieldsToUpdate); 
+            
+            // To do Add Validation for editing a user
+            await userRepository.UpdateAsync(userToUpdate);
         }
     }
 }

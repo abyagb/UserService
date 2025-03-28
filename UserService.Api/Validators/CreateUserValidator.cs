@@ -30,7 +30,5 @@ namespace UserService.Api.Validators
                 .MaximumLength(50).WithMessage("Maximum length is 50 characters.")
                 .Matches("^[a-zA-Z]+$").WithMessage("Name must contain only letters without spaces or special characters.");
         }
-
     }
 }
-
