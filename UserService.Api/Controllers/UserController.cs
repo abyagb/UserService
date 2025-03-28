@@ -12,7 +12,7 @@ namespace UserService.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController(IEndUserService userService, IMapper mapper, IValidator<CreateUserViewModel> userValidator) : ControllerBase
+    public class UserController(IEndUserService userService, IMapper mapper, IValidator<CreateUserViewModel> userValidator, IValidator<EditUserViewModel> editUserValidator) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
@@ -43,7 +43,7 @@ namespace UserService.Api.Controllers
             await userService.CreateAsync(userDto);
             return Ok();
         }
-
+       
         [HttpGet("{id:guid}")]
         public async Task<IActionResult> Get([FromRoute] Guid id)
         {
@@ -54,6 +54,21 @@ namespace UserService.Api.Controllers
         [HttpPatch("{id}")]
         public async Task<IActionResult> Update(Guid id, EditUserViewModel viewModel)
         {
+            var validationResult = editUserValidator.Validate(viewModel);
+            if (!validationResult.IsValid)
+            {
+                var validationErrors = validationResult.Errors
+               .Select(e => new { Field = e.PropertyName, Error = e.ErrorMessage })
+                .ToList();
+
+
+                return BadRequest(new
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    Message = "Validation failed",
+                    ValidationErrors = validationErrors
+                });
+            }
             var userPatchDto = MapToPatchDto(id, viewModel);
             await userService.UpdateAsync(id, userPatchDto);
             return NoContent();

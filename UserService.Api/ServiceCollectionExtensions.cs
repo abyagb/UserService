@@ -9,6 +9,8 @@ using UserService.Api.Validators;
 using UserService.Api.ViewModels;
 using UserService.Application.Validators;
 using UserService.Api.Mappings;
+using UserService.Validators;
+using UserService.ViewModels;
 
 
 namespace UserService.Api
@@ -34,6 +36,8 @@ namespace UserService.Api
             services.AddScoped<IValidator<CreateUserViewModel>, CreateUserValidator>();
 
             services.AddScoped<IEndUserValidator,EndUserValidator>();
+
+            services.AddScoped<IValidator<EditUserViewModel>, EditUserValidator>();
         }
 
         public static void AddControllerUtilities(this IServiceCollection services)

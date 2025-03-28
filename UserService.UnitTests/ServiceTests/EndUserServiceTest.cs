@@ -167,47 +167,12 @@ namespace UserService.UnitTests.ServiceTests
 
         }
 
-        
+
         // Home work write test for editing a user
 
-        //[Fact]
-        //public async Task Creates_User_Successfully()
-        //{
-        //    // Arrange
-        //    var testUserDto = _autoFixture.Create<UserDto>();
+        
 
-        //    // Act
-
-        //    // Assert
-
-
-
-        //    await _endUserService.CreateAsync(userDto);
-        //    var addedUser = _users.Find(u => u.Email == userDto.Email && u.PhoneNumber == userDto.PhoneNumber);
-        //    addedUser.ShouldNotBeNull();
-        //    addedUser.Email.ShouldBe(userDto.Email);
-        //    addedUser.PhoneNumber.ShouldBe(userDto.PhoneNumber);
-        //}
-
-        //[Fact]
-        //public async Task Deletes_User_Successfully()
-        //{
-        //    var id = _users[0].UserId;
-        //    await _endUserService.DeleteAsync(id);
-        //    var result = _users.FirstOrDefault(x => x.UserId.Equals(id));
-        //    result.ShouldBeNull();
-        //}
-
-        //[Fact]
-        //public async Task Deletes_User_Successfully()
-        //{
-        //    var nonExistentUserId = Guid.NewGuid();
-        //    var exception = await Assert.ThrowsAsync<KeyNotFoundException>(
-        //        async () => await _endUserService.DeleteAsync(nonExistentUserId)
-        //    );
-        //    exception.ShouldNotBeNull();
-        //}
-
+        
         private List<User> CreateTestUsers()
         {
             return _autoFixture.CreateMany<User>(3).ToList();
