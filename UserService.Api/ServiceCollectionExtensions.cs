@@ -22,7 +22,6 @@ namespace UserService.Api
             services.AddScoped<IUserRepository, UserRepository>();
         }
 
-
         public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped<IEndUserService, EndUserService>();
@@ -30,13 +29,10 @@ namespace UserService.Api
             services.AddAutoMapper(typeof(UserModelProfile));
         }
 
-
         public static void AddValidators(this IServiceCollection services)
         {
             services.AddScoped<IValidator<CreateUserViewModel>, CreateUserValidator>();
-
             services.AddScoped<IEndUserValidator,EndUserValidator>();
-
             services.AddScoped<IValidator<EditUserViewModel>, EditUserValidator>();
         }
 

@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace UserService.Api.ViewModels
+﻿namespace UserService.Api.ViewModels
 {
     public class CreateUserViewModel
     {

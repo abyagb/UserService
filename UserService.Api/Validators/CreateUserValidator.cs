@@ -9,15 +9,12 @@ namespace UserService.Api.Validators
         {
             ApplyNameRules(() => RuleFor(x => x.FirstName));
 
-
             ApplyNameRules(() => RuleFor(x => x.LastName));
-
 
             RuleFor(x => x.Email)
                 .NotEmpty().WithMessage("Email is required.")
                 .Matches(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
                 .WithMessage("Invalid email format.");
-
 
             RuleFor(x => x.PhoneNumber)
                 .NotEmpty().WithMessage("Phone number is required.")

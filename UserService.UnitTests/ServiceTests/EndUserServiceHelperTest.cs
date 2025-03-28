@@ -13,30 +13,30 @@ namespace UserService.UnitTests.ServiceTests
         private readonly Fixture _fixture = new();
 
         [Theory]
-        [InlineData("Mohamad")]
-        [InlineData("Aby")]
-        [InlineData("Joe")]
-        public void Update_Name_Successfully(string newName)
+        [InlineData("testFirstNameOne","testLastNameOne")]
+        [InlineData("testFirstNameTwo","testLastNameTwo")]
+        [InlineData("testFirstNameThree","testLastNameThree")]
+        public void Update_Name_Successfully(string testFirstName, string testLastName)
         {
             // Arrange
             var testModel = CreateTestModel();
             var updatedFields = new Dictionary<string, object>
             {
-                {"FirstName",newName },
-                {"LastName",newName }
+                {"FirstName", testFirstName },
+                {"LastName", testLastName }
             };
 
             // Assert
             EndUserServiceHelper.ApplyPatch(testModel, updatedFields);
 
             // Act
-            testModel.FirstName.ShouldBe(newName);
-            testModel.LastName.ShouldBe(newName);
+            testModel.FirstName.ShouldBe(testFirstName);
+            testModel.LastName.ShouldBe(testLastName);
             
         }
 
         [Fact]
-        public void Validate_Patch_Fields_With_Valid_Fields_Should_Not_Throw_Exception()
+        public void ValidatePatchFields_With_Valid_Fields_Should_Not_Throw_Exception()
         {
             var validFields = new Dictionary<string, object>
             {
@@ -49,7 +49,7 @@ namespace UserService.UnitTests.ServiceTests
         }
 
         [Fact]
-        public void Validate_Patch_Fields_With_Invalid_Field_Should_Throw_ArgumentException()
+        public void ValidatePatchFields_With_Invalid_Field_Should_Throw_ArgumentException()
         {
             // Arrange
             var invalidFields = new Dictionary<string, object>
@@ -59,9 +59,8 @@ namespace UserService.UnitTests.ServiceTests
 
             // Act & Assert
             var exception = Should.Throw<ArgumentException>(() =>
-                EndUserServiceHelper.ValidatePatchFields(invalidFields)
-            );
-
+                EndUserServiceHelper.ValidatePatchFields(invalidFields));
+         
             exception.Message.ShouldContain("Field ‘InvalidField’ is not a valid field for User.");
         }
 

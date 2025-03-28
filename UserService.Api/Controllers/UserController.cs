@@ -4,9 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using UserService.Api.ViewModels;
 using UserService.Application.DTOs;
 using UserService.Application.Interfaces;
-using UserService.Domain;
 using UserService.ViewModels;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace UserService.Api.Controllers
 {
@@ -31,7 +29,7 @@ namespace UserService.Api.Controllers
                .Select(e => new { Field = e.PropertyName, Error = e.ErrorMessage })
                 .ToList();
 
-
+                // todo : refactor this
                 return BadRequest(new
                 {
                     StatusCode = StatusCodes.Status400BadRequest,
@@ -61,7 +59,7 @@ namespace UserService.Api.Controllers
                .Select(e => new { Field = e.PropertyName, Error = e.ErrorMessage })
                 .ToList();
 
-
+                // todo : refactor this
                 return BadRequest(new
                 {
                     StatusCode = StatusCodes.Status400BadRequest,

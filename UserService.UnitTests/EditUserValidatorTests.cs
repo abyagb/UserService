@@ -25,7 +25,7 @@ namespace UserService.UnitTests
         public void Should_Return_Correct_Validation_For_Name(string? name, bool isValid)
         {
             // Arrange
-            var testModel=CreateTestModel();
+            var testModel = CreateTestModel();
             testModel.LastName = name;
             testModel.FirstName = name;
 
@@ -50,7 +50,6 @@ namespace UserService.UnitTests
         [InlineData("testEmail@com", false)]
         [InlineData("www.testEmail.com", false)]
         [InlineData("test@test.com", true)]
-
         public void Should_Return_Correct_Validation_For_Email(string? email, bool isValid)
         {
             // Arrange

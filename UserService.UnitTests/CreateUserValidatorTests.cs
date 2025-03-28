@@ -2,7 +2,6 @@ using Shouldly;
 using UserService.Api.Validators;
 using UserService.Api.ViewModels;
 
-
 namespace UserService.UnitTests
 {
     public class CreateUserValidatorTests

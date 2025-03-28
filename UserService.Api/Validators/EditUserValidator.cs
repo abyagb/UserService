@@ -1,6 +1,4 @@
-﻿// Homework to do write validator for editing a user
-// The validation rules here are the same for creating a user except values don't need to be null
-using FluentValidation;
+﻿using FluentValidation;
 using UserService.ViewModels;
 
 namespace UserService.Validators
@@ -13,14 +11,11 @@ namespace UserService.Validators
 
             ApplyNameRules(RuleFor(x => x.LastName));
 
-
             RuleFor(x => x.Email)
                 .Matches(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
                 .WithMessage("Invalid email format.")
                 .When(x=> !string.IsNullOrEmpty(x.Email));
             
-
-
             RuleFor(x => x.PhoneNumber)
                 .Matches(@"^\d{11}$") // Only allows exactly 11 digits
                 .WithMessage("Phone number must be exactly 11 digits.")
