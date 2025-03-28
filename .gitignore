@@ -1,7 +1,87 @@
+# Rider-specific files
+.idea/
+.idea_modules/
+*.iml
+
+# Rider User-specific files (optional, usually not needed in source control)
+*.shelf/
+
+# VS Code (if some devs use it)
+.vscode/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.dbmdl
+
+# Build results
 bin/
 obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
-.idea/
-.vs/
+out/
+TestResults/
+*.log
+
+# Azure Functions local settings
+local.settings.json
+
+# NUnit test results
+*.VisualState.xml
+TestResult.xml
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# dotCover
+*.dotCover
+
+# Coverlet coverage
+coverage.json
+coverage.info
+coverage.opencover.xml
+coverage.cobertura.xml
+coverage.*
+
+# Logs and crash dumps
+*.log
+*.tlog
+*.dmp
+
+# User secrets
+secrets.json
+
+# Dependency caches
+**/node_modules/
+**/packages/
+
+# JetBrains Rider caches (optional)
+.idea/.idea.WebServers.xml
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Rider workspace files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/usage.statistics.xml
+.idea/shelf/
+
+# dotnet tools
+.dotnet/
+
+# Rider run configuration
+.idea/runConfigurations/
+
+# Env files
+.env
+.env.*
+
